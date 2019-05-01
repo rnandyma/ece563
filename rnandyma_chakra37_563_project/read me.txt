@@ -1,0 +1,8 @@
+1. folder 2p contains the input files, code, output files, submission script for 2 processors.
+2. folder 4p contains the input files, code, output files, submission script for 4 processors.
+3. folder 8p contains the input files, code, output files, submission script for 8 processors.
+4. Compiling command:
+mpiicpc -std=c++11 filename.cpp -I /apps/cent7/boost/1.60.0_impi-2017.1.132_intel-17.0.1.132/include -L/apps/cent7/boost/1.60.0_impi-2017.1.132_intel-17.0.1.132/lib -lboost_serialization -lboost_mpi -fopenmp -o object_file -mt_mpi
+
+5.Command to export library path in .sub file
+export LD_LIBRARY_PATH=/apps/cent7/boost/1.60.0_impi-2017.1.132_intel-17.0.1.132/lib:/apps/cent7/intel/compilers_and_libraries_2017.1.132/linux/compiler/lib/intel64
