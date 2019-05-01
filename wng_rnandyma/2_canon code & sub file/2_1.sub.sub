@@ -1,0 +1,27 @@
+# FILENAME:  mpi_hello.sub
+#PBS -l nodes=1:ppn=16,walltime=06:00:00
+#PBS -q long
+
+cd $PBS_O_WORKDIR
+
+# Load the default module set to get the recommended MPI library.
+module load rcac
+
+mpiexec -n 1 ./canon 128 > ./Q_2/1_128.o
+mpiexec -n 1 ./canon 256 > ./Q_2/1_256.o
+mpiexec -n 1 ./canon 384 > ./Q_2/1_384.o
+mpiexec -n 1 ./canon 640 > ./Q_2/1_640.o
+mpiexec -n 1 ./canon 768 > ./Q_2/1_768.o
+mpiexec -n 1 ./canon 800 > ./Q_2/1_800.o
+mpiexec -n 1 ./canon 1024 > ./Q_2/1_1024.o
+mpiexec -n 1 ./canon 2048 > ./Q_2/1_2048.o
+mpiexec -n 1 ./canon 4096 > ./Q_2/1_4096.o
+mpiexec -n 1 ./canon 6400 > ./Q_2/1_6400.o
+mpiexec -n 1 ./canon 8000 > ./Q_2/1_8000.o
+mpiexec -n 1 ./canon 9600 > ./Q_2/1_9600.o
+
+
+
+
+
+

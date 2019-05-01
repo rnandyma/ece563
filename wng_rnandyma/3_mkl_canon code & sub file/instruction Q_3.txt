@@ -1,0 +1,8 @@
+To compile the code using the command in mkl_script file.
+
+Then run the sub files for 'x' number of processors. For 16 processors run the sub file named 3_16.sub, for 4 procs run 3_4.sub
+and for 1 proc run 3_1.sub
+Submit using the following command
+qsub -n ./subfile.sub
+In the sub file you can set the number of nodes and processor per node and the wall time for the job to be submitted.
+A sample .o file is also in the directory

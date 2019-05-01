@@ -1,0 +1,15 @@
+
+
+numP=16, N=256
+
+00 : Elapsed Time (PARALLEL) is 0.024684
+
+
+numP=16, N=384
+
+00 : Elapsed Time (PARALLEL) is 0.081470
+
+
+numP=16, N=768
+
+00 : Elapsed Time (PARALLEL) is 0.548158

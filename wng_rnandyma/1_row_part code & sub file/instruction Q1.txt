@@ -1,0 +1,8 @@
+To compile the code using the following command
+mpicc -std=c99 row_part_send_recv.c -o row_part_send_recv -lm
+Then run the sub files for 'x' number of processors. For 16 processors run the sub file named 1_16.sub, for 4 procs run 1_4.sub
+and for 1 proc run 1_1.sub
+Submit using the following command
+qsub -n ./subfile.sub
+In the sub file you can set the number of nodes and processor per node and the wall time for the job to be submitted.
+A sample .o file is in the directory

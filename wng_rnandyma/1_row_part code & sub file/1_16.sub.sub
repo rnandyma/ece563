@@ -1,0 +1,27 @@
+# FILENAME:  1_16.sub
+#PBS -l nodes=1:ppn=20,walltime=06:00:00
+#PBS -q long
+
+cd $PBS_O_WORKDIR
+
+# Load the default module set to get the recommended MPI library.
+module load rcac
+
+mpiexec -n 16 ./row_part_send_recv 128
+mpiexec -n 16 ./row_part_send_recv 256
+mpiexec -n 16 ./row_part_send_recv 384 
+mpiexec -n 16 ./row_part_send_recv 640
+mpiexec -n 16 ./row_part_send_recv 768
+mpiexec -n 16 ./row_part_send_recv 800
+mpiexec -n 16 ./row_part_send_recv 1024 
+mpiexec -n 16 ./row_part_send_recv 2048 
+mpiexec -n 16 ./row_part_send_recv 4096 
+mpiexec -n 16 ./row_part_send_recv 6400 
+mpiexec -n 16 ./row_part_send_recv 8192
+mpiexec -n 16 ./row_part_send_recv 9600 
+
+
+
+
+
+

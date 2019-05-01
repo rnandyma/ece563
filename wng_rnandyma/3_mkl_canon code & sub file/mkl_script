@@ -1,0 +1,1 @@
+mpicc -std=c99 mkl_canon.c -L/apps/cent7/intel/compilers_and_libraries_2017.1.132/linux/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread -o mkl_canon -lm
